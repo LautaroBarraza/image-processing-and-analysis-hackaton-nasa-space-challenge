@@ -1,0 +1,28 @@
+import config
+from logic.interpreter import ClusterInterpreter
+
+def main():
+    """
+    Función principal para ejecutar el pipeline de interpretación.
+    """
+    print("===================================================")
+    print("= INICIANDO INTERPRETACIÓN Y PREDICCIÓN DE CLUSTERS =")
+    print("===================================================")
+
+    try:
+        interpreter = ClusterInterpreter(config)
+        
+        # 1. Ejecutar el análisis de velocidad por cluster
+        interpreter.analyze_and_plot_velocities()
+        
+        # 2. Ejecutar la predicción de la zona unificada
+        interpreter.predict_unified_zone()
+
+        print("\n\n🎯 ¡ANÁLISIS DE INTERPRETACIÓN FINALIZADO! 🎯")
+
+    except FileNotFoundError as e:
+        print(f"\n[ERROR] Archivos necesarios no encontrados: {e}")
+        print("Asegúrate de haber ejecutado 'run_preprocessing.py' y 'run_classification.py' primero.")
+
+if __name__ == "__main__":
+    main()
