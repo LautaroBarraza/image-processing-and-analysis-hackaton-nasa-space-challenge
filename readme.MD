@@ -27,7 +27,6 @@ El objetivo de este pipeline es procesar grandes volúmenes de datos satelitales
 
 El proyecto está organizado de manera modular para facilitar su mantenimiento y escalabilidad.
 
-/
 |-- 📂 data/                  # Carpeta para los datos (no incluida en el repo)
 |   |-- 📂 insar_raw_downloads/ # Datos crudos descargados
 |   |-- mendoza_timeseries_dataset.h5 # Dataset procesado
