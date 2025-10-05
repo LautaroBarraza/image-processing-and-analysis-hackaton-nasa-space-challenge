@@ -116,6 +116,7 @@ python src/run_classification.py
 
 # PASO 4: Interpreta los resultados y genera la predicción a futuro
 python src/run_interpretation.py
+``` 
 
 Al finalizar, todos los resultados (gráficos, reportes, modelo y datos procesados) estarán disponibles en la carpeta output/.
 
