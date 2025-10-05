@@ -1,0 +1,4 @@
+.venv*/
+# Ignorar la carpeta de datos y todo su contenido
+data/Resultados_InSAR_Mendoza/*
+data/h5_files/*
