@@ -26,7 +26,7 @@ El objetivo de este pipeline es procesar grandes volúmenes de datos satelitales
 ## 📂 Estructura del Repositorio
 
 El proyecto está organizado de manera modular para facilitar su mantenimiento y escalabilidad.
-
+```markdown
 /tu_proyecto/
 |
 |-- 📂 data/
@@ -55,8 +55,9 @@ El proyecto está organizado de manera modular para facilitar su mantenimiento y
 |
 |-- README.md
 |-- requirements.txt
-
 ---
+```
+
 
 ## 🔧 Cómo Adaptarlo a una Nueva Región
 
