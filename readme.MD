@@ -27,28 +27,34 @@ El objetivo de este pipeline es procesar grandes volúmenes de datos satelitales
 
 El proyecto está organizado de manera modular para facilitar su mantenimiento y escalabilidad.
 
-|-- 📂 data/                  # Carpeta para los datos (no incluida en el repo)
-|   |-- 📂 insar_raw_downloads/ # Datos crudos descargados
-|   |-- mendoza_timeseries_dataset.h5 # Dataset procesado
+/tu_proyecto/
 |
-|-- 📂 output/                # Carpeta para los resultados generados
-|   |-- 📂 analisis_clustering/ # Gráficos y reportes de la interpretación
-|   |-- 📂 quality_mask/      # Máscara de calidad generada
-|   |-- 📂 saved_model/       # Modelo K-Means entrenado y etiquetas
+|-- 📂 data/
+|   |-- 📂 insar_raw_downloads/
+|   |-- mendoza_timeseries_dataset.h5
 |
-|-- 📂 src/                   # Código fuente del proyecto
-|   |-- 📂 logic/             # Clases que encapsulan la lógica principal
-|   |   |-- data_manager.py     # Lógica de descarga y procesamiento H5
-|   |   |-- preprocessor.py     # Lógica del control de calidad
-|   |   |-- optimizer.py        # Lógica del método del codo
-|   |   |-- classifier.py       # Lógica del clustering K-Means
-|   |   |-- interpreter.py      # Lógica de análisis y predicción
+|-- 📂 output/
+|   |-- 📂 analisis_clustering/
+|   |-- 📂 quality_mask/
+|   |-- 📂 saved_model/
+|
+|-- 📂 src/
+|   |-- 📂 logic/
+|   |   |-- data_manager.py
+|   |   |-- preprocessor.py
+|   |   |-- optimizer.py
+|   |   |-- classifier.py
+|   |   |-- interpreter.py
 |   |
-|   |-- config.py             # ¡El archivo más importante para la configuración!
-|   |-- run_*.py              # Scripts ejecutables para cada paso del pipeline
+|   |-- config.py
+|   |-- run_data_preparation.py
+|   |-- run_preprocessing.py
+|   |-- run_find_optimal_k.py
+|   |-- run_classification.py
+|   |-- run_interpretation.py
 |
-|-- README.md                 # Este archivo
-|-- requirements.txt          # Dependencias de Python
+|-- README.md
+|-- requirements.txt
 
 ---
 
